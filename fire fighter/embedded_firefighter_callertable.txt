@@ -1,0 +1,24 @@
+main
+	__CC2DW
+		____DoICP
+	init
+	init_sonar
+	ATD_init
+	pwm_init
+	motor_stop
+	right_sensor
+		motor_right
+	left_sensor
+		motor_left
+	middle_sensor
+		motor_forward
+	Div_16X16_U
+	set_servo_position1
+interrupt
+	read_sonar
+		usDelay
+		Mul_32x32_U
+		Div_32x32_U
+	ATD_read
+	Mul_16X16_U
+	Div_16X16_U
